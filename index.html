@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos de Bootstrap 5.3 -->
+    <link rel="stylesheet" href="./icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Icono de la página -->
+    <link rel="icon" type="img/png" href="./img/icon.png">
+
+    <title>IMC</title>
+</head>
+<body>
+    <main class="d-flex justify-content-center align-items-center vh-100">
+        <section class="container bg-light bg-opacity-75 shadow-lg py-5 rounded w-50">
+
+            <!-- Ingreso de información -->
+            <div class="container w-100 needs-validation px-4" id="valid">
+                <h4 class="text-center fw-semibold">CALCULADORA IMC</h4>
+                
+                <!-- Estatura -->
+                <div class="container mb-2 px-0">
+                    <input type="number" class="form-control border-top border-end border-start" id="height" placeholder="Estatura [m]" step="0.01" required>
+                    <div class="invalid-feedback p-1 fs-6 fw-medium">
+                        <i class="bi bi-exclamation-triangle-fill mx-1"></i>
+                        Ingrese la altura.
+                    </div>
+                </div>
+                
+                <!-- Peso -->
+                <div class="container mb-2 px-0">
+                    <input type="number" class="form-control border-top border-end border-start" id="weight" placeholder="Peso [kg]" step="0.1" required>
+                    <div class="invalid-feedback p-1 fs-6 fw-medium">
+                        <i class="bi bi-exclamation-triangle-fill mx-1"></i>
+                        Ingrese el peso.
+                    </div>
+                </div>
+                
+                <!-- Boton calcular-->
+                <button type="button" class="btn btn-success w-100 mb-2" id="button">Calcular</button>
+
+                <!-- Resultado -->
+                <div id="result"></div>
+
+                <!-- Botón para la encuesta UX -->
+                <div class="text-center mt-3">
+                    <a href="https://forms.gle/qMLKUXtDRQ2oNsfM9" target="_blank" class="btn btn-secondary">Evaluar Experiencia de Usuario</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script principal -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

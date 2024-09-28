@@ -1,0 +1,10 @@
+body {
+    background-image: url(https://img.freepik.com/free-photo/weight-loss-scale-with-centimeter-top-view_1150-42311.jpg?t=st=1727491720~exp=1727495320~hmac=4dd9ea01fc8cfb23b3ac7d8245db7864c3efcc3e7da7a21c72f8bdc873940a8e&w=1060);
+    background-size: cover; /* Para que la imagen cubra todo el fondo */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar que se repita */
+    background-attachment: fixed; /* Para que el fondo se mantenga al hacer scroll */
+
+}
+
+
